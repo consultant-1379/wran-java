@@ -1,0 +1,40 @@
+# Linux
+*~
+*.swp
+*.swo
+
+
+# Netsim
+*.mml
+
+
+# SimNet
+**/log/*.log
+**/bin/*.log
+bin/**/*.mo
+*.log
+**/gen/mo/R*
+**/gen/mo/*.jar
+**/gen/mo/*.ser
+*.ser
+
+
+# Eclipse
+.classpath
+.project
+.settings/
+#/bin
+
+# Maven
+target/
+
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+
+# Mac
+.DS_Store
+/bin

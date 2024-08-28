@@ -1,0 +1,18 @@
+[Put here good to follow beneficial rules for project development]
+
+RULES FOR THE PROJECT
+
+1) Before push your code format it in Eclipse
+	Instructions: Select your code file > Source > Format 
+	
+2) Before push your code check that commit message contains short description at first line. 
+   Later, leave an empty line after that explain the commit contents in detail. 
+   
+3) Before push your code check that author and functions comments are added:
+   Instructions: Move your cursor to class element e.g. in front of class name,
+     Source > Generate Element Comment
+
+4) Never get a configuration data inside a method.
+   Configuration data must pass to a method as a parameter. 
+   This allows us to avoid Tightly Coupling Code
+   See the link for more details: http://msdn.microsoft.com/en-us/magazine/cc947917.aspx#id0070020	 

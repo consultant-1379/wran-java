@@ -1,0 +1,144 @@
+
+
+<wran>
+
+	<PLMN>
+		<W1>
+			<MCC>46</MCC>
+			<MNC>6</MNC>
+			<MNC_LENGTH>2</MNC_LENGTH>
+		</W1>
+
+		<W2>
+			<MCC>46</MCC>
+			<MNC>7</MNC>
+			<MNC_LENGTH>2</MNC_LENGTH>
+		</W2>
+	</PLMN>
+
+	<build>true</build>
+	<MOFILE>true</MOFILE>
+	<NETCONFREPORT>off</NETCONFREPORT>
+
+	<!--area distribution for cells -->
+	<areasDist>
+		<value startRnc="1" endRnc="108" share="95">
+		</value>
+		<value startRnc="109" endRnc="109" share="111">
+		</value>
+	</areasDist>
+
+	<NETWORK_SIZE>50787</NETWORK_SIZE>
+	<AVG_UTRAN_RELATION>43.5</AVG_UTRAN_RELATION>
+	<PERC_INTRA_RELATION>66</PERC_INTRA_RELATION>
+	<PERC_INTER_RELATION>22</PERC_INTER_RELATION>
+	<PERC_EXT_RELATION>12</PERC_EXT_RELATION>
+	<PERC_GSM_RELATION>22</PERC_GSM_RELATION>
+
+
+	<IntraRelationDistribution>
+		<value startRnc="1" endRnc="54" numOfRel="31">
+		</value>
+		<value startRnc="55" endRnc="108" numOfRel="20">
+		</value>
+		<value startRnc="109" endRnc="109" numOfRel="31">
+		</value>
+	</IntraRelationDistribution>
+
+	<W1.RNCTYPE>
+		<TYPE startRnc="1" endRnc="53" numOfRBS="37">
+			<RBS cell1="9" cell3="15" cell6="10" cell9="3" cell12="0"></RBS>
+		</TYPE>
+		<TYPE startRnc="54" endRnc="94" numOfRBS="45">
+			<RBS cell1="5" cell3="30" cell6="10" cell9="0" cell12="0"></RBS>
+		</TYPE>
+		<TYPE startRnc="95" endRnc="103" numOfRBS="214" numOfPRBS="228">
+			<RBS pcell1="228" cell1="3" cell3="74" cell6="45" cell9="42"
+				cell12="50"></RBS>
+		</TYPE>
+		<TYPE startRnc="104" endRnc="104" numOfRBS="424" numOfPRBS="750">
+			<RBS pcell1="750" cell1="0" cell3="21" cell6="13" cell9="90"
+				cell12="300"></RBS>
+		</TYPE>
+		<TYPE startRnc="105" endRnc="106" numOfRBS="334" numOfPRBS="249">
+			<RBS pcell1="249" cell1="0" cell3="110" cell6="80" cell9="81"
+				cell12="63"></RBS>
+		</TYPE>
+		<TYPE startRnc="107" endRnc="108" numOfRBS="310" numOfPRBS="475">
+			<RBS pcell1="475" cell1="0" cell3="60" cell6="70" cell9="85"
+				cell12="95"></RBS>
+		</TYPE>
+		<TYPE startRnc="109" endRnc="109" numOfRBS="424" numOfPRBS="750">
+			<RBS pcell1="750" cell1="0" cell3="21" cell6="13" cell9="90"
+				cell12="300"></RBS>
+		</TYPE>
+	</W1.RNCTYPE>
+
+	<RNCNODEVERSION>
+		<value version="N" startRnc="1" endRnc="39"></value>
+		<value version="N" startRnc="95" endRnc="109"></value>
+	</RNCNODEVERSION>
+	
+	<RBSNODEVERSION>			
+ 		<value version="U.1.50" startRnc="1" endRnc="26"></value> 
+		<value version="S2.1.150" startRnc="27" endRnc="39"></value>
+		<value version="S2.1.100" startRnc="40" endRnc="69"></value>
+		<value version="T.1.71" startRnc="70" endRnc="76"></value>
+		<value version="S2.1.100" startRnc="77" endRnc="94"></value>
+		<value version="S2.1.6" startRnc="95" endRnc="96"></value>
+		<value version="S2.1.6" startRnc="95" endRnc="96"></value>
+		<value version="T.1.160" startRnc="97" endRnc="101"></value>
+		<value version="S2.1.100" startRnc="102" endRnc="103"></value>
+		<value version="T.1.180" startRnc="104" endRnc="104"></value>
+		<value version="T.1.160" startRnc="105" endRnc="106"></value>
+		<value version="T.1.180" startRnc="107" endRnc="107"></value>
+		<value version="S2.1.100" startRnc="108" endRnc="108"></value>
+		<value version="T.1.180" startRnc="109" endRnc="109"></value>
+	</RBSNODEVERSION>
+
+	<UserPlaneTransport>
+		<TYPE startRnc="1" endRnc="42" atm="true" ipv4="false"></TYPE>
+		<TYPE startRnc="43" endRnc="108" atm="false" ipv4="true"></TYPE>
+	</UserPlaneTransport>
+	
+	<!-- To add new version end with ".*". This means zero to many 
+		 Only star will not work-->
+	<COMBINEDCELL>
+		<PERCENTAGE>5</PERCENTAGE>
+		<SUPPORTEDVERSIONS>
+			<VERSION>T.1.1.*</VERSION>
+			<VERSION>U.*</VERSION>
+		</SUPPORTEDVERSIONS>
+	</COMBINEDCELL>
+
+	<RNCRELATION>
+		<value rncNumber="109" volume="300000"></value>
+	</RNCRELATION>
+
+	<RNCINPOOL feature="on">
+		<POOL members="104,105" cluster="1"></POOL>
+	</RNCINPOOL>
+
+	<anrList>
+		<nodeVersion>N</nodeVersion>
+		<totalPercentage>10</totalPercentage>
+		<breakdown percentage="5" range="8-16"></breakdown>
+		<breakdown percentage="15" range="3-7"></breakdown>
+		<breakdown percentage="80" range="1-2"></breakdown>
+	</anrList>
+
+	<GsmIrathom>
+		<MCC>46</MCC>
+		<MNC>4</MNC>
+		<MNC_LENGTH>2</MNC_LENGTH>
+		<DATAFILE>file.csv</DATAFILE>
+		<MASTERCELLS>22500</MASTERCELLS>
+		<PROXYCELLS>166667</PROXYCELLS>
+		<RELATIONCOUNT>156195</RELATIONCOUNT>
+		<HANDOVERFILE>off</HANDOVERFILE>
+	</GsmIrathom>
+
+	<lteEnabled>true</lteEnabled>
+	<LTEDATAFILE>PublicIrathomLTE2WRAN.csv</LTEDATAFILE>
+
+</wran>

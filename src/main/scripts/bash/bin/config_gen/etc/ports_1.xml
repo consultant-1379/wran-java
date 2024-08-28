@@ -1,0 +1,18 @@
+                <vlan name="E_1_<<VLANID1>>_OW_1_<<RNCNAME>>">
+                    <vlanId><<VLANID1>></vlanId>
+                    <tagged>true</tagged>
+                </vlan>
+                <vlan name="E_1_<<VLANID3>>_TW_1_<<RNCNAME>>">
+                    <vlanId><<VLANID3>></vlanId>
+                    <tagged>true</tagged>
+                </vlan>
+                <ipv4Interface name="E_1_<<VLANID1>>_OW_1_IP4_<<RNCNAME>><<RBSNAME>>">
+                    <vlanIndex><<VLANINDEX0>></vlanIndex>
+                    <ipAddress>20.<<address_quart_3>>.<<address_quart_2>>.<<IPADDRESSwan_oam_1_ip>></ipAddress>
+                    <prefixLength>30</prefixLength>
+                </ipv4Interface>
+                <ipv4Interface name="E_1_<<VLANID3>>_TW_1_IP4_<<RNCNAME>><<RBSNAME>>">
+                    <vlanIndex><<VLANINDEX1>></vlanIndex>
+                    <ipAddress>20.<<address_quart_3>>.<<address_quart_2>>.<<IPADDRESSwan_iub_1_ip>></ipAddress>
+                    <prefixLength>30</prefixLength>
+                </ipv4Interface>

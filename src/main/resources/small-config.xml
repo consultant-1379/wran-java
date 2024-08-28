@@ -1,0 +1,92 @@
+
+
+<wran>
+
+<PLMN>
+	<W1>
+		<MCC>46</MCC>
+		<MNC>6</MNC>
+		<MNC_LENGTH>2</MNC_LENGTH>
+	</W1>
+	
+	<W2>
+		<MCC>46</MCC>
+		<MNC>7</MNC>
+		<MNC_LENGTH>2</MNC_LENGTH>
+	</W2>
+</PLMN>
+
+<build>true</build>
+
+<!--area distribution for cells-->
+<areasDist>
+	<value startRnc="1" endRnc="108" share="95">
+	</value>
+	<value startRnc="109" endRnc="109" share="111">
+	</value>
+</areasDist>
+
+<NETWORK_SIZE>132</NETWORK_SIZE>
+<AVG_UTRAN_RELATION>43</AVG_UTRAN_RELATION>
+<PERC_INTRA_RELATION>66</PERC_INTRA_RELATION>
+<PERC_INTER_RELATION>22</PERC_INTER_RELATION>
+<PERC_EXT_RELATION>12</PERC_EXT_RELATION>	
+<PERC_GSM_RELATION>1</PERC_GSM_RELATION>	
+	
+
+<IntraRelationDistribution>
+	<value startRnc="1" endRnc="54" numOfRel="31">
+	</value>
+	<value startRnc="55" endRnc="108" numOfRel="20">
+	</value>
+	<value startRnc="109" endRnc="109" numOfRel="31">
+	</value>
+</IntraRelationDistribution>
+
+<W1.RNCTYPE>
+	<TYPE startRnc="1" endRnc="53" numOfRBS="28">
+		<RBS  cell1="0" cell3="15" cell6="10" cell9="3" cell12="0" ></RBS>
+	</TYPE>
+</W1.RNCTYPE>
+
+<RNCINPOOL feature="on">
+	<POOL members="102,103"></POOL>
+</RNCINPOOL>
+
+<anrList>
+	<nodeVersion>N</nodeVersion>
+	<totalPercentage>10</totalPercentage>
+	<breakdown percentage="5" range="8-16"></breakdown>
+	<breakdown percentage="15" range="3-7"></breakdown>
+	<breakdown percentage="80" range="1-2"></breakdown>
+</anrList>
+
+<GsmIrathom>
+	<MCC>46</MCC>
+	<MNC>4</MNC>
+	<MNC_LENGTH>2</MNC_LENGTH>
+	<DATAFILE>GSM_Cell_info_50k_SystemTest_013_2_7.csv</DATAFILE>
+	<MASTERCELLS>100</MASTERCELLS>
+	<PROXYCELLS>300</PROXYCELLS>
+	<RELATIONCOUNT>1</RELATIONCOUNT>
+</GsmIrathom>
+
+<ExGsmCellDistribution>
+	<value startRnc="1" endRnc="40" share="300" irathom="yes">
+	</value>
+	<value startRnc="41" endRnc="41" share="38" irathom="yes">
+	</value>
+	<value startRnc="42" endRnc="96" share="1520">
+	</value>
+	<value startRnc="97" endRnc="103" share="3872">
+	</value>
+	<value startRnc="104" endRnc="106" share="5055">
+	</value>
+	<value startRnc="107" endRnc="109" share="9600">
+	</value>
+</ExGsmCellDistribution>
+
+
+<lteEnabled>false</lteEnabled>
+
+</wran>

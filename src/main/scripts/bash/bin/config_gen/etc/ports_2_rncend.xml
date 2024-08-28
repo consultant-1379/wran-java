@@ -1,0 +1,11 @@
+</port>
+            <port name="RNC<<RNCNAME>>">
+                <vlan name="RNC<<RNCNAME>>_Iub">
+                    <vlanId>100</vlanId>
+                    <tagged>true</tagged>
+                </vlan>
+                <ipv4Interface name="RNC<<RNCNAME>>_Iub_IP4">
+                    <vlanIndex>0</vlanIndex>
+                    <ipAddress>10.0.<<rnc_quart2>>.<<defaultrouter_no_2>></ipAddress>
+                    <prefixLength>25</prefixLength>
+                </ipv4Interface>

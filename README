@@ -1,0 +1,82 @@
+########################################################################################################################
+# Product Name         : SimNet WRAN
+# Product Number       : ERICwransimulations_CXP9033489
+# Sprint Drop          : 17.1
+# Script Base Revision : CXP 903 3489-1
+# Repository           : https://gerrit.ericsson.se/#/admin/projects/OSS/com.ericsson.ci.simnet.prototype/wran-java
+########################################################################################################################
+# US/SNIPs/CRs/TRs/SNADs/SNAGs/ROLLBACK/EW
+# US = User Story
+# SNIP = SimNet Improvement Programme
+# CR = Change Request
+# SJ = SimNet Jira ticket
+# TR = Trouble Report for OSS-RC/ENM etc.
+# SNAD = SubNet Adapter
+# SNAG = Issue found by test
+# ROLLBACK = Issue requiring network functionailty rollback
+# EW = Emergency Workaround for an known issue
+
+
+#----------------------------------------------------------------
+# ENM 17.1 / OSSRC 17.0.8_EU
+#----------------------------------------------------------------
+#---------------------------------------------------------------
+# SJ - CXP 903 3489-1 - 24/11/2016 - xramjag
+# SJ - NSS-8286 : Disable PM data on node
+#
+#Scripts Modified :
+#           src/main/scripts/bash/bin/DG2ST/1000createRadioNetworkForDG2.sh
+#           src/main/scripts/bash/bin/RNCST/1001createRadioNetworkForRNC.sh
+#           src/main/scripts/bash/bin/RBSST/1000createRadioNetworkForRBS.sh
+#           src/main/scripts/bash/bin/PICOST/1000createRadioNetworkForPICO.sh
+#
+#Files Added :
+#--------------------------------------------------------------
+
+
+
+# ENM 16.15 / OSSRC 17.0.8_EU
+#----------------------------------------------------------------
+#---------------------------------------------------------------
+# SJ - CXP 903 3489-1 - 15/09/2016 - xramjag
+# SJ - NSS-6705 : ENM-OSSRC Switch for BackupManager MO attributes
+#
+#Scripts Modified :
+#           src/main/scripts/bash/bin/DG2ST/1000createRadioNetworkForDG2.sh
+#
+#Files Added :
+#           src/main/scripts/bash/dat/O17A-ST-17A-15K.env
+#--------------------------------------------------------------
+
+
+
+****INSTRUCTIONS*****
+
+[Put here project genereal info]
+
+This is a wran network project.
+
+[[ HOW TO RUN ]]
+WAY-1
+	Go to 
+	1) Run > Run Configurations 
+	2) In the Main tab write one of the build commands
+	e.g. clean install | clean test | clean package 
+	3) Select JRE tab enter the following
+		-Xss50m
+	4) Then run
+
+WAY-2 
+	1) Edit existing configurations via Run Configurations and go to JRE tab and write -Xss50m
+	
+WAY-3
+	NOTE: [Shaded jar includes all the dependencies. It is easy to release, distribute.
+	You don't need to carry any other file but shaded jar.]
+	While you are under root folder wran-java in a shell
+	1) Execute maven package phase
+		$ mvn clean package
+	2) Go to target folder at the end of build cycle
+		$ cd target
+	3) Now, pick shaded jar and run the following command with relavent release version
+		$ java -jar -Xss50m wran-java-0.0.1-SNAPSHOT-shaded.jar 1 1
+	
